@@ -1,0 +1,392 @@
+*{
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+   
+
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url(BACKGROUND.png);
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+
+.yakuza-container{
+
+    width: 85vw;
+
+
+    margin: 20px auto;
+
+    padding: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+#kiryu:hover{
+    background-image: url('KIRYUHOVER.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+
+}
+
+#taiga:hover{
+    background-image: url('TAIGAHOVER.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: wheat;
+
+}
+
+
+
+#goro:hover{
+    background-image: url('GOROHOVER.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: brown;
+    
+
+}
+
+
+#shun:hover{
+    background-image: url('SHUNHOVER.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: red;
+
+}
+
+#makoto:hover{
+    background-image: url('MAKOTOHOVER.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: red;
+
+}
+
+ 
+
+.card{
+
+    border: 5px solid darkolivegreen;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+ 
+
+.frame{
+
+    text-align: center;
+
+}
+
+ 
+
+#kiryu .frame, #shun.frame{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+ 
+
+ 
+
+ 
+
+.name{
+
+    font-size: 2.4rem;
+
+    font-weight: 700;
+
+}
+
+ 
+
+.clan{
+
+    font-size: 1.5rem;
+
+}
+
+img{
+
+    width: 128px;
+
+}
+
+ 
+
+.description{
+
+    text-align: justify;
+
+    font-weight: bold;
+
+    line-height: 1.5;
+
+}
+
+ 
+
+#kiryu{
+
+    background-color: #8E4C4C;
+
+    grid-column: 1/3;
+
+    grid-row: 1/2;
+
+}
+
+ 
+
+#goro{
+
+    background-color: #977000 ;
+
+    color: black;
+
+}
+
+ 
+
+#taiga{
+
+    background-color: #4A7100;
+
+}
+
+ 
+
+#shun{
+
+    background-color: #FF7C80;
+
+    grid-column: 2/4;
+
+    grid-row: 2/3;
+
+}
+
+ 
+
+#makoto{
+
+    background-color: #C1B330;
+
+    grid-column: 4/5;
+
+    grid-row: 1/3;
+
+}
+
+ 
+
+@media (max-width:950px){
+
+    .yakuza-container{
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+ 
+
+    #kiryu{
+
+        grid-column: 1/2;
+
+        grid-row: 1/2;
+
+    }
+
+ 
+
+    #kiryu .frame, #shun .frame{
+
+        flex-direction: column;
+
+    }
+
+ 
+
+    #goro{
+
+        grid-column: 2/3;
+
+        grid-row: 1/2;
+
+    }
+
+ 
+
+    #taiga{
+
+        grid-column: 1/2;
+
+        grid-row: 2/3;
+
+    }
+
+ 
+
+    #shun{
+
+        grid-column: 2/3;
+
+        grid-row: 2/3;
+
+    }
+
+ 
+
+    #makoto{
+
+        grid-column: 1/3;
+
+        grid-row: 3/4;
+
+    }
+
+ 
+
+    #makoto .frame{
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+}
+
+ 
+
+@media (max-width:750px){
+
+    .yakuza-container{
+
+        grid-template-columns: 1fr;
+
+    }
+
+ 
+
+    #kiryu{
+
+        grid-column: 1/2;
+
+        grid-row: 1/2;
+
+    }
+
+ 
+
+    #goro{
+
+        grid-column: 1/2;
+
+        grid-row: 2/3;
+
+    }
+
+ 
+
+    #taiga{
+
+        grid-column: 1/2;
+
+        grid-row: 3/4;
+
+    }
+
+ 
+
+    #shun{
+
+        grid-column: 1/2;
+
+        grid-row: 4/5;
+
+    }
+
+ 
+
+    #makoto{
+
+        grid-column: 1/2;
+
+        grid-row: 5/6;
+
+    }
+
+ 
+
+    #kiryu .frame,
+
+    #goro .frame,
+
+    #taiga .frame,
+
+    #shun .frame,
+
+    #makoto .frame{
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 20px;
+
+    }
+
+ 
+
+}
