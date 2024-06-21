@@ -68,11 +68,11 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-.character-gallery {
+.character-gallery, .old-game-gallery {
     margin: 40px 0;
 }
 
-.character-gallery h2 {
+.character-gallery h2, .old-game-gallery h2 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -84,20 +84,31 @@ main {
     gap: 20px;
 }
 
-.character {
+.character, .game {
     text-align: center;
-    max-width: 200px;
+    max-width: 250px;
 }
 
-.character img {
+.character img, .game img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s; 
 }
 
-.character p {
+.character img:hover, .game img:hover {
+    transform: scale(1.05); 
+}
+
+.character p, .game p {
     margin-top: 10px;
+}
+
+.old-game-gallery {
+    background-color: #2a2a2a; 
+    padding: 20px;
+    border-radius: 10px;
 }
 
 footer {
@@ -107,8 +118,6 @@ footer {
     padding: 20px;
     border-top: 1px solid #444;
 }
-
-
 
 @media (max-width: 768px) {
     header nav {
