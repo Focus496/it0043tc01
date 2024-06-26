@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    border: 1px solid #010F0E ;
+    padding: 10px;
+    height: 200px;
+    width: 400px;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C5217;
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.btnclr {
+    background-color: #155DEC   ;
+    border: 2px ;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    margin: 4px 2px;
+    border-radius: 4px;
+   
+}
+
+.btnclr:hover {
+    background-color: #1142A2  ;
+}

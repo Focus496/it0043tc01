@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="styletsa7.css">
+</head>
+<body>
+    <div class="controls">
+    <h1>Flex Direction</h1>
+    <button class="btnclr" onclick="resetFlexbox()">Reset Flexbox</button>
+    <label>Gap: <input type="number" id="gap" value="0" oninput="updateGap()"></label>
+    <div>
+    <button onclick="setFlexDirection('row')">Row</button>
+    <button onclick="setFlexDirection('column')">Column</button>
+    </div>
+    <div>
+    <h2>Justify Content</h2>
+    <button class="btnclr" onclick="justifyContent('flex-start')">Start</button>
+    <button class="btnclr" onclick="justifyContent('center')">Center</button>
+    <button class="btnclr" onclick="justifyContent('flex-end')">End</button>
+    <button class="btnclr" onclick="justifyContent('space-between')">Space Between</button>
+    <button class="btnclr" onclick="justifyContent('space-around')">Space Around</button>
+    <button class="btnclr" onclick="justifyContent('space-evenly')">Space Evenly</button>
+    </div>
+    <div>
+    <h2>Align Items</h2>
+    <button class="btnclr" onclick="alignItems('flex-start')">Start</button>
+    <button class="btnclr" onclick="alignItems('center')">Center</button>
+    <button class="btnclr" onclick="alignItems('flex-end')">End</button>
+    </div>
+    <div>
+    <h2>Flex Grow</h2>
+    <button class="btnclr" onclick="growAll()">Grow All</button>
+    <label>Grow B-1: <input type="number" id="growB1" value="0" oninput="updateGrow(1)"></label>
+    <label>Grow B-2: <input type="number" id="growB2" value="0" oninput="updateGrow(2)"></label>
+    <label>Grow B-3: <input type="number" id="growB3" value="0" oninput="updateGrow(3)"></label>
+    </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item" id="item1">1</div>
+        <div class="flex-item" id="item2">2</div>
+        <div class="flex-item" id="item3">3</div>
+    </div>
+    <script src="samsontsa7.js"></script>
+</body>
+</html>
