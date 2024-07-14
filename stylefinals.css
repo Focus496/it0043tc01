@@ -1,0 +1,248 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+    background-image: url(BACKGROUND.jpg);
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    height: 100vh;
+    padding: 40px;
+    margin: 0;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px auto 0 auto; 
+}
+
+#home {
+    text-align: center;
+    background: url('EYES.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 4em; 
+    text-shadow: 2px 2px 4px #000;
+}
+
+#home p {
+    font-size: 2em; 
+    text-shadow: 2px 2px 4px #000;
+}
+
+#about {
+    background: url('RAIN.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#about h2, #about p {
+    text-shadow: 2px 2px 4px #000;
+}
+
+#projects {
+    background: url('HANDS.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#projects h2, #projects p {
+    text-shadow: 2px 2px 4px #000;
+}
+
+#contact {
+    background: url('SMOKE.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#contact h2, #contact ul {
+    text-shadow: 2px 2px 4px #000;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-pic {
+    flex: 0 0 200px;
+}
+
+#about .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #3D3D3D;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(45% - 20px);
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-gif {
+    margin-top: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-gif {
+    margin-top: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#faq {
+    background: url('FLOWER.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#faq h2, #faq p {
+    text-shadow: 2px 2px 4px #000;
+}
+
+#faq h2{
+    font-size: 2em; 
+    text-shadow: 2px 2px 4px #000;
+}
+
+#faq p {
+    font-size: 1em; 
+    text-shadow: 2px 2px 4px #000;
+}
+.faq-container {
+    width: 100%;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.2em;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
